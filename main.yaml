@@ -20,3 +20,6 @@
     
        - name: create a Service
          command: kubectl apply -f service.yaml
+
+       - name: create a Secret
+         command: kubectl apply -f secret.yaml
