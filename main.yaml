@@ -15,7 +15,12 @@
            src: service.yaml
            dest: service.yaml
 
-       - name: create a deploymenti
+       - name: Copying secret.yaml to destination
+         copy:
+           src: secret.yaml
+           dest: secret.yaml
+
+       - name: create a deployment
          command: kubectl apply -f deployment.yaml
     
        - name: create a Service
