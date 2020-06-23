@@ -1,6 +1,6 @@
 ---
     - name: Create pods using deployment
-      hosts: kubernetes
+      hosts: kubernetes # Please add hosts group or dev, qa or Prod
       become: true
       user: ec2-user
     
